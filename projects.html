@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/723103f9f5.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Simeco Scheduler</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="employees.html">Employees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">Reports</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <br><br>
+        <h2>Projects</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="project1List" data-toggle="list" href="#project1Tab" role="tab" aria-controls="home">Project 1</a>
+                    <a class="list-group-item list-group-item-action" id="project2List" data-toggle="list" href="#project2Tab" role="tab" aria-controls="profile">Project 2</a>
+                    <a class="list-group-item list-group-item-action" id="project3List" data-toggle="list" href="#project3Tab" role="tab" aria-controls="messages">Project 3</a>
+                    <a class="list-group-item list-group-item-action" id="project4List" data-toggle="list" href="#project4Tab" role="tab" aria-controls="settings">Project 4</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="project1Tab" role="tabpanel" aria-labelledby="project-1-tab">
+                        <h3>Project 1</h3>
+                        <hr>
+                        <h4>Project Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <hr>
+                        <h4>Assigned staff</h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Damir Omerbegovic</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Adnan Kardas</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#addEmployeeToProjectModal"><i class="fad fa-user-plus"></i> add a new employee to the project</a>
+
+                    </div>
+                    <div class="tab-pane fade" id="project2Tab" role="tabpanel" aria-labelledby="list-profile-list">
+                        <h3>Project 2</h3>
+                        <hr>
+                        <h4>Project Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <hr>
+                        <h4>Assigned staff</h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Damir Omerbegovic</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Adnan Kardas</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#addEmployeeToProjectModal"><i class="fad fa-user-plus"></i> add a new employee to the project</a>
+
+                    </div>
+                    <div class="tab-pane fade" id="project3Tab" role="tabpanel" aria-labelledby="list-messages-list">
+                        <h3>Project 3</h3>
+                        <hr>
+                        <h4>Project Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <hr>
+                        <h4>Assigned staff</h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Damir Omerbegovic</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Adnan Kardas</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#addEmployeeToProjectModal"><i class="fad fa-user-plus"></i> add a new employee to the project</a>
+
+                    </div>
+                    <div class="tab-pane fade" id="project4Tab" role="tabpanel" aria-labelledby="list-settings-list">
+                        <h3>Project 4</h3>
+                        <hr>
+                        <h4>Project Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <hr>
+                        <h4>Assigned staff</h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Damir Omerbegovic</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Adnan Kardas</td>
+                                    <td>Engineer</td>
+                                    <td>
+                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
+                                        </span>
+                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#addEmployeeToProjectModal"><i class="fad fa-user-plus"></i> add a new employee to the project</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="addEmployeeToProjectModal" tabindex="-1" role="dialog" aria-labelledby="addEmployeeToProjectModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Project 1 - Add employee to the project</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Available employees</h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Options</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mujo Mujic</td>
+                                <td>Engineer</td>
+                                <td><a class="" href="#" data-toggle="tooltip" data-placement="top" title="Add to project"><i class="fad fa-user-plus"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Meho Mehic</td>
+                                <td>Engineer</td>
+                                <td><a class="" href="#" data-toggle="tooltip" data-placement="top" title="Add to project"><i class="fad fa-user-plus"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="editEmployeeRoleModal" tabindex="-1" role="dialog" aria-labelledby="editEmployeeRoleLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Project 1 - Edit employee role</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="exampleFormControlSelect1">Project role</label>
+                        <select class="form-control" id="projectRole">
+                            <option>Engineer</option>
+                            <option>Lead Engineer</option>
+                            <option>Supervisor</option>
+                            <option>Field Work</option>
+                        </select>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js">
+
+    </script>
+</body>
+</html>
