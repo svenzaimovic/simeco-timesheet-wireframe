@@ -145,7 +145,7 @@ footer {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     img {
         float: right;
         margin: 24px;
@@ -225,6 +225,13 @@ footer {
             }
             &:hover {
                 background-color: transparent;
+            }
+            &:active {
+                background-color: transparent;
+            }
+            &:focus {
+                background-color: transparent;
+                outline: none;
             }
         }
     }

@@ -131,7 +131,7 @@ footer {
   bottom: 0px;
   right: 0px;
   left: 0px;
-  position: absolute;
+  position: fixed;
 }
 footer img {
   float: right;
@@ -212,6 +212,13 @@ footer img {
 }
 .custom-side-list a:last-child:hover {
   background-color: transparent;
+}
+.custom-side-list a:last-child:active {
+  background-color: transparent;
+}
+.custom-side-list a:last-child:focus {
+  background-color: transparent;
+  outline: none;
 }
 
 .card-subheading {

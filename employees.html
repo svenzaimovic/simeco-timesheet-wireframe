@@ -41,53 +41,69 @@
 
     <section class="container">
         <br><br>
-        <h2>Projects</h2>
+        <h1 class="main-page-heading">Finance</h1>
+        <p class="main-page-subheading">Employees and their respective wages for different roles and types of work</p>
         <br><br>
         <div class="row">
-            <div class="col-4">
-                <div class="list-group" id="list-tab" role="tablist">
+            <div class="col-3">
+                <div class="list-group custom-side-list" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="employee1" data-toggle="list" href="#employee1Tab" role="tab" aria-controls="home">Damir Omerbegovic</a>
                     <a class="list-group-item list-group-item-action" id="employee2" data-toggle="list" href="#employee2Tab" role="tab" aria-controls="profile">Adnan Kardas</a>
                     <a class="list-group-item list-group-item-action" id="employee3" data-toggle="list" href="#employee3Tab" role="tab" aria-controls="messages">Mujo Mujic</a>
                     <a class="list-group-item list-group-item-action" id="employee4" data-toggle="list" href="#employee4Tab" role="tab" aria-controls="settings">Meho Mehic</a>
+                    <a href="#" class="list-group-item list-group-item-action text-link-light" id="createNewProject"><i class="fal fa-plus-circle"></i></a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-9">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="employee1Tab" role="tabpanel" aria-labelledby="project-1-tab">
-                        <h3>Damir Omerbegovic</h3>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Wage</th>
-                                    <th scope="col">Options</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Engineer</th>
-                                    <td>25 BAM/h <span class="badge badge-secondary">default</span></td>
-                                    <td>
-                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
-                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
-                                        </span>
-                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Lead engineer</th>
-                                    <td>35 BAM/h</td>
-                                    <td>
-                                        <span data-toggle="modal" data-target="#editEmployeeRoleModal">
-                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Edit employee"><i class="fad fa-edit"></i></a>
-                                        </span>
-                                        <a class="text-danger" href="#" data-toggle="tooltip" data-placement="top" title="Remove from project"><i class="fad fa-user-minus"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#addEmployeeToProjectModal"><i class="fad fa-user-cog"></i> update employee</a>
+                    <div class="tab-pane fade show active card project-card" id="employee1Tab" role="tabpanel" aria-labelledby="project-1-tab">
+                        <div class="card-header">
+                            <h3>Damir Omerbegovic</h3>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-hover table-hover-light">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Type of work</th>
+                                        <th scope="col">Hr. cost</th>
+                                        <th scope="col">Hr. cost 25%</th>
+                                        <th scope="col">Hr. cost 50%</th>
+                                        <th scope="col">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Lead Engineer</th>
+                                        <td>1 - Engineering</td>
+                                        <td>15 BAM/h</td>
+                                        <td>18.75 BAM/h</td>
+                                        <td>22.5 BAM/h</td>
+                                        <td>
+                                            <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Edit wage"><i class="fal fa-edit"></i></a>
+                                            </span>
+                                            <a class="" href="#" data-toggle="tooltip" data-placement="top" title="Remove wage"><i class="fas fa-user-minus"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Lead engineer</th>
+                                        <td>2 - Engineering c/o</td>
+                                        <td>25 BAM/h</td>
+                                        <td>31.25 BAM/h</td>
+                                        <td>37.5 BAM/h</td>
+                                        <td>
+                                            <span data-toggle="modal" data-target="#editEmployeeRoleModal">
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Edit wage"><i class="fal fa-edit"></i></a>
+                                            </span>
+                                            <a class="" href="#" data-toggle="tooltip" data-placement="top" title="Remove wage"><i class="fas fa-user-minus"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a class="text-link-light" href="#" role="button" data-toggle="modal" data-target="#addEmployeeToProjectModal"><i class="fas fa-user-cog"></i> Add wage</a>
+                        </div>
+
 
                     </div>
                     <div class="tab-pane fade" id="employee2Tab" role="tabpanel" aria-labelledby="list-profile-list">
@@ -247,20 +263,29 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Project 1 - Edit employee role</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Damir Omerbegovic - Edit employee wage</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <label for="exampleFormControlSelect1">Project role</label>
+                        <label for="exampleFormControlSelect1">Role</label>
                         <select class="form-control" id="projectRole">
                             <option>Engineer</option>
                             <option>Lead Engineer</option>
                             <option>Supervisor</option>
                             <option>Field Work</option>
                         </select>
-
+                        <br>
+                        <label for="exampleFormControlSelect1">Type of work</label>
+                        <select class="form-control" id="projectRole">
+                            <option>1 - Engineering</option>
+                            <option>2 - Engineering c/o</option>
+                            <option>3 - Research</option>
+                        </select>
+                        <br>
+                        <label for="exampleFormControlSelect1">Wage</label><br>
+                        <input type="text" name="" value="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -271,6 +296,9 @@
         </div>
 
     </section>
+    <footer>
+        <img src="img/simeco-white-logo.png" alt="">
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
